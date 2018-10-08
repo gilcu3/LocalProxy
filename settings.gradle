@@ -1,1 +1,1 @@
-include ':app', ':RootTools', ':RootShell', ':ProxySettingsChange'
+include ':app',  ':ProxySettingsChange'

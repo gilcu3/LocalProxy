@@ -2,18 +2,19 @@
 
 buildscript {
     repositories {
-        maven { url 'http://nexus.prod.uci.cu/repository/maven-all/' }
-//        google()
-//        jcenter()
+        //maven { url 'http://nexus.prod.uci.cu/repository/maven-all/' }
+        google()
+        jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.2.0'
     }
 }
 
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
         classpath "io.realm:realm-gradle-plugin:3.7.2"
@@ -22,10 +23,10 @@ buildscript {
 
 allprojects {
     repositories {
-        maven { url 'http://nexus.prod.uci.cu/repository/maven-all/' }
-//        maven {url 'https://jitpack.io'}
-//        google()
-//        jcenter()
+        //maven { url 'http://nexus.prod.uci.cu/repository/maven-all/' }
+        maven {url 'https://jitpack.io'}
+        google()
+        jcenter()
     }
 }
 
